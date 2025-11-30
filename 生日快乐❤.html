@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday — redirecting</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <!-- 将 iframe 替换为跳转，便于平滑过渡/备用 -->
+    <script>
+        // 立即跳转到根目录下的 login.html
+        window.location.replace('./login.html');
+    </script>
+
+    <!-- 或使用 meta 刷新（可选） -->
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=./login.html">
+        如果您的浏览器不支持 JavaScript，请点击 <a href="./login.html">这里</a> 跳转。
+    </noscript>
+</body>
+
+</html>
