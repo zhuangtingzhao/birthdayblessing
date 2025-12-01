@@ -13,20 +13,18 @@
       height: 100%;
       min-height: 100vh;
     }
-    /* fallback 背景色，若你有背景图片请把 ../img/bg.jpg 换成实际文件名 */
-    body {
-      background-color: #0b1220; /* 深色背景作为回退，可按需更改 */
-      background-image: url('../img/bg.jpg');
+    /* 把背景应用到 .bgcolor，便于与 fullPage 容器配合，提供可见回退色 */
+    .bgcolor {
+      background-color: #ee9ca7; /* 回退色，改为与 login 页面一致 */
+      background-image: url('../img/bg.jpg'); /* 确认该文件存在并路径正确 */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-    /* 如果外部样式会对 .bgcolor 设背景，这里保持透明以免覆盖 body 背景 */
-    .bgcolor {
-      background: transparent;
       min-height: 100vh;
+    }
+    /* 避免 body 覆盖 .bgcolor */
+    body {
+      background: transparent;
     }
   </style>
 </head>
