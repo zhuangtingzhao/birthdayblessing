@@ -26,6 +26,22 @@
     body {
       background: transparent;
     }
+
+    /* 新增：手机端居中样式 */
+    @media (max-width: 768px) {
+      /* 把 fullpage 容器和每一屏设成 flex 居中 */
+      #dowebok, .bgcolor { display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 16px; box-sizing: border-box; }
+      .section { width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 12px 0; box-sizing: border-box; }
+
+      /* 文本居中，限制宽度 */
+      .ly-txt01, .ly-txt02, .ly-txt12, .ly-txt14, .ly-txt32, .ly-txt34, .ly-txt82, .ly-txt84 { text-align: center; width: 100%; padding: 0 8px; }
+
+      /* 图片自适应且居中 */
+      img { max-width: 92%; height: auto; display: block; margin: 8px auto; }
+
+      /* 隐藏装饰性气泡，减少小屏干扰 */
+      .bg-bubbles { display: none !important; }
+    }
   </style>
 </head>
 
@@ -183,7 +199,7 @@
             <img class="ly-img11" src="../img/HappyBirthday.png" style="width:200%;height:200%">
           </div>
           <div class="ly-txt82" style="top:8%">
-            <p class="wwww1">哈喽，我的小朋友</p>
+            <p class="wwww1">哈喽，我的朋友</p>
             <p class="wwww1">新的一岁，不必万丈光芒</p>
             <p class="wwww1">但愿始终温暖有光</p>
             <p class="wwww1">深话浅说，长路慢走，</p>
